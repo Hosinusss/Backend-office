@@ -1,0 +1,16 @@
+controllers:
+    resource: ../src/Controller/
+    type: annotation
+
+kernel:
+    resource: ../src/Kernel.php
+    type: annotation
+
+api_login_check:
+    path: /api/login_check
+signup:
+    path: /signup
+    controller: App\Controller\SignupController::signup
+addproduct:
+    path: /api/products
+    controller: App\Controller\ProductController::addProduct
